@@ -1,0 +1,5 @@
+@EXCLUDE=(102,103,3141,3142,3151);
+$STORAGE='BkpOnOVH-05';
+$MAX_FILES='4';
+$OPTIONS='-compress=zstd -mailnotification=failure -mode=snapshot  -zstd=0 --quiet';
+#$debug = 1;

@@ -1,0 +1,6 @@
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+#m   h  dom mon dow user   command
+10   07 *   *   6  root   /root/bin/pve-backup/pve-backup.pl  > /tmp/pve-backup.pl.log 2>&1
+# send Backup result to zabbix
+#m   h      dom mon dow
+55   8,10,11  *   *   *    root /etc/zabbix/scripts/watch_backup.sh > /dev/null 2>&1
