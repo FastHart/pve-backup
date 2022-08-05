@@ -42,7 +42,7 @@ say "Program started";
 &lock_set;
 
 # Load exclude array from file
-err "Unable to open $CONFIG_FILE" if ( !-e $CONFIG_FILE );
+err "Unable to find $CONFIG_FILE" if ( !-e $CONFIG_FILE );
 do $CONFIG_FILE || err "Unable to load $CONFIG_FILE";
 
 # Load list of VM's from proxmox
