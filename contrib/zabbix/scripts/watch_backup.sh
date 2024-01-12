@@ -10,7 +10,7 @@
 #
 $debug=0;
 
-$log_file="/var/log/00_backups.log"; # лог-файл который мониторим
+$log_file="/var/log/00_pve-backup.log"; # лог-файл который мониторим
 
 $errors_file="/etc/zabbix/scripts/watch_backup_errors"; # список ключевых фарз которые ищем в логе
 

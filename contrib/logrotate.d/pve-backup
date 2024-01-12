@@ -1,11 +1,10 @@
-/var/log/00_backups.log
+/var/log/00_pve-backup.log
 {
     rotate 4
     weekly
     missingok
     notifempty
-    compress
-#    delaycompress
+    nocompress
     sharedscripts
     postrotate
 	/usr/lib/rsyslog/rsyslog-rotate
